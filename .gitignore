@@ -1,0 +1,30 @@
+# IntelliJ project files
+.idea/
+*.iml
+out/
+# build output
+build/
+target/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Gradle
+.gradle/
+**/build/
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+**/target/
+
+# Java
+*.class
+
+# Environment / secrets
+*.env
+*.properties
