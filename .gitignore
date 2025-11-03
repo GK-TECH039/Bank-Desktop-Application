@@ -1,10 +1,12 @@
-# IntelliJ project files
+# Ignore IntelliJ and NetBeans files
 .idea/
 *.iml
+nbproject/private/
 out/
-# build output
 build/
 target/
+dist/
+build.xml~
 
 # Logs
 *.log
@@ -13,18 +15,31 @@ target/
 .DS_Store
 Thumbs.db
 
-# Gradle
+# Compiled classes
+*.class
+
+# Gradle and Maven
 .gradle/
 **/build/
-
-# Maven
 .mvn/
 !/.mvn/wrapper/maven-wrapper.jar
-**/target/
 
-# Java
-*.class
+# Java archives
+*.jar
+*.war
+*.ear
+
+# Database lock files
+*.lck
 
 # Environment / secrets
 *.env
 *.properties
+!service.properties  # keep your service.properties file
+
+# Allow these source and resource folders
+!/src/
+!/Assets/
+!/design/
+!/Gkform/
+!/test/
